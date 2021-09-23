@@ -1,0 +1,36 @@
+server:
+  port: 8181
+  shutdown: graceful
+  tomcat:
+    accept-count: 100
+    connection-timeout: 2000
+    max-connections: 8192
+    threads:
+      max: 200
+      min-spare: 10
+spring:
+  application:
+    name: consignado-service
+  lifecycle:
+  timeout-per-shutdown-phase: 15s
+  datasource:
+    hikari:
+      maximum-pool-size: 5
+      minimum-idle: 3
+      idle-timeout: 10000
+      connection-timeout: 5000
+      pool-name: consignado-pool
+    url: jdbc:mysql://localhost:3306/consignado?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL57Dialect
+      ddl-auto: validate
+    show-sql: true
+
+inss:
+  url: http://localhost:8080
+
+featuretoogle:
+  legacy: false

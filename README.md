@@ -4,8 +4,8 @@
 - Para convivência dos dois fluxos, utilizamos o ff4j como liga e desliga (em relação ao legado)
 - Abaixo encontra-se a arquitetura utilizada do contexto.
 
-![alt text](https://github.com/fabriciolfj/arquitetura-microservice-boaspraticas/blob/main/dependencies.png)
+![alt text](https://github.com/fabriciolfj/averbacao-service/blob/main/averba%C3%A7%C3%A3o.drawio.png)
 - Utilizou-se arquitetura clean para disponisção dos pacotes da aplicação.
-  ![alt text](https://github.com/fabriciolfj/arquitetura-microservice-boaspraticas/blob/main/dependencies.png)
+  ![alt text](https://github.com/fabriciolfj/averbacao-service/blob/main/clean.png)
 ### Ambiente
 - Existe o docker-compose na aplicação, afim de simular dependências do mesmo, para subida local.
