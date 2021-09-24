@@ -9,3 +9,8 @@
   ![alt text](https://github.com/fabriciolfj/averbacao-service/blob/main/clean.png)
 ### Ambiente
 - Existe o docker-compose na aplicação, afim de simular dependências do mesmo, para subida local.
+- Abaixo o endpoint do ffj4 e swagger.
+```
+http://localhost:8181/ff4j-web-console/features
+http://localhost:8181/swagger-ui.html
+```
