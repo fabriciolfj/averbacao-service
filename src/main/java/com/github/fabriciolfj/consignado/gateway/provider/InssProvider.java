@@ -17,7 +17,7 @@ public class InssProvider {
 
     public Averbacao execute(final Consignado consignado) {
         try {
-            final var response = inssClient.updateReserva(InssDTOMapper.toRequest(consignado));
+            final var response = inssClient.requestReserva(InssDTOMapper.toRequest(consignado));
             return InssDTOMapper.toDomain(response, consignado.getCode());
         } catch (Exception e) {
             log.error("Fail request balance, consignado code: {}", consignado.getCode());

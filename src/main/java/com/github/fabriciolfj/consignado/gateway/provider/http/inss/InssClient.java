@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface InssClient {
 
     @PutMapping("/api/v1/averbacao")
-    InssResponse updateReserva(@RequestBody final InssRequest request);
+    InssResponse requestReserva(@RequestBody final InssRequest request);
 }
